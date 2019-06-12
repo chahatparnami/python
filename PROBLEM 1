@@ -1,0 +1,11 @@
+QUESTION-
+
+Create a program that asks the user to enter their name and their age.
+ Print out a message that will tell them the year that they will turn 95 years old.
+
+SOLUTION-
+from datetime import datetime
+age=int(input("enter your age"))
+name=str(input("enter your name"))
+hundred = int((100-age) + datetime.now().year)
+print ('Hello %s. You are %s years old. You will turn 100 years old in %s.' % (name, age, hundred))
